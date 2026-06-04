@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオサイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-logo">Portfolio</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">ホーム</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">経歴・スキル</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">作品集</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ホームセクション -->
+    <section class="home" id="home">
+        <div class="home-overlay"></div>
+        <div class="home-content container">
+            <h1 class="home-title fade-in">デザイナー<br>& フロントエンド開発</h1>
+            <p class="home-description fade-in">
+                広告デザインからWEB制作まで、<br>
+                企画・デザイン・コーディングの一連の流れを担当
+            </p>
+            <div class="home-buttons fade-in">
+                <a href="#portfolio" class="btn btn-primary">作品集</a>
+                <a href="#about" class="btn btn-secondary">経歴・スキル</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- できることセクション -->
+    <section class="features section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">できること</h2>
+                <p class="section-description">企画から制作まで幅広く対応します</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">広告・WEBデザイン</h3>
+                    <p class="feature-description">Photoshop、Illustratorを使用した広告デザインとWEBデザイン制作</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">フロントエンド開発</h3>
+                    <p class="feature-description">HTML、SCSS、JavaScriptを使用したコーディングとWEBサイト制作</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">ECサイト構築</h3>
+                    <p class="feature-description">WordPressを活用した自社サービスのWEBサイト・ECサイト制作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 経歴・スキルセクション -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">経歴・スキル</h2>
+                <p class="section-description">服飾デザインから広告、そしてWEB制作へ</p>
+            </div>
+
+            <!-- 経歴タイムライン -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">現在</span>
+                        <h3 class="timeline-title">自社サービス WEBサイト・ECサイト制作</h3>
+                        <p class="timeline-description">自社サービスのWEBサイトやECサイトの制作に携わり、企画からデザイン、コーディングまで一貫して担当</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">求職者支援訓練</span>
+                        <h3 class="timeline-title">WEB＆デザイン科 受講</h3>
+                        <p class="timeline-description">夫の転勤による引越しを機に受講。WEBデザインを制作する技術を習得し、HTML・CSS・JavaScriptのコーディングスキルを身につける</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">広告代理店時代</span>
+                        <h3 class="timeline-title">ナイトレジャー業界 WEB広告デザイン</h3>
+                        <p class="timeline-description">広告代理店に転職し、WEB広告のデザイン制作に携わる。WEBサイトのコーディングを一から制作できるようになりたいという想いを抱く</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">制服メーカー時代</span>
+                        <h3 class="timeline-title">企画・服飾デザイン</h3>
+                        <p class="timeline-description">大学卒業後、企業制服メーカーに入社。企画と服飾デザインに携わり、商品をお客様に届けるためのツールである広告に興味を持つ</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Skills Section -->
+            <section id="skills" class="section-bg-white">
+                <h3 class="skills-heading">スキル</h3>
+                <div class="container">
+                    <div class="skill-tabs">
+                        <button class="skill-tab" onclick="switchSkillTab('ui')">UIスキル</button>
+                        <button class="skill-tab" onclick="switchSkillTab('technical')">開発スキル</button>
+                        <button class="skill-tab" onclick="switchSkillTab('design')">グラフィックデザイン</button>
+                    </div>
+
+                    <div class="skills-content">
+                        <h3 id="skillCategoryTitle" style="font-size: 2rem; margin-bottom: 2rem;">UIスキル</h3>
+                        <div id="skillsContainer"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- スキル -->
+            <div class="skills-section">
+                <h3 class="skills-heading">使用ツール</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4 class="skill-category-title">デザインツール</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Photoshop</span>
+                            <span class="skill-tag">Illustrator</span>
+                            <span class="skill-tag">InDesign</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-category-title">開発ツール</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Visual Studio Code</span>
+                            <span class="skill-tag">Chrome DevTools</span>
+                            <span class="skill-tag">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-category-title">Officeツール</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Word</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">PowerPoint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 資格 -->
+                <div class="certifications">
+                    <h4 class="certifications-title">資格</h4>
+                    <div class="certifications-grid">
+                        <div class="certification-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <div>
+                                <h5>Microsoft Office Specialist Excel 2016</h5>
+                                <p>2020年 11月 合格</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <div>
+                                <h5>Webクリエイター能力認定試験HTML5 エキスパート級</h5>
+                                <p>2021年 2月 合格</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ポートフォリオセクション -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ポートフォリオ</h2>
+                <p class="section-description">これまでに携わったプロジェクトの一部をご紹介します</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1523001185760-84ed1a5c6377?w=800" alt="ECサイトリニューアル">
+                        <div class="portfolio-overlay">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">WEBデザイン・コーディング</span>
+                        <h3 class="portfolio-title">ECサイトリニューアル</h3>
+                        <p class="portfolio-description">自社サービスのECサイトをリニューアル。ユーザビリティを重視したデザインとレスポンシブ対応のコーディングを実施。</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">WordPress</span>
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">SCSS</span>
+                            <span class="portfolio-tag">レスポンシブ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1630522790858-50b4ef44944b?w=800" alt="コーポレートサイト制作">
+                        <div class="portfolio-overlay">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">WEBデザイン・開発</span>
+                        <h3 class="portfolio-title">コーポレートサイト制作</h3>
+                        <p class="portfolio-description">企業のブランドイメージを表現したコーポレートサイト。企画からデザイン、コーディングまで一貫して担当。</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">デザイン</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1774283834505-e7bf45485d43?w=800" alt="WEB広告デザイン">
+                        <div class="portfolio-overlay">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">広告デザイン</span>
+                        <h3 class="portfolio-title">WEB広告デザイン</h3>
+                        <p class="portfolio-description">ナイトレジャー業界向けのWEB広告を多数制作。ターゲットに響くビジュアルとコピーの組み合わせを追求。</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Photoshop</span>
+                            <span class="portfolio-tag">Illustrator</span>
+                            <span class="portfolio-tag">バナー</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1512645592367-97ba8a9d4035?w=800" alt="ブランディングデザイン">
+                        <div class="portfolio-overlay">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">グラフィックデザイン</span>
+                        <h3 class="portfolio-title">ブランディングデザイン</h3>
+                        <p class="portfolio-description">企業制服メーカーでの商品カタログやパンフレットのデザイン。ブランドの世界観を表現。</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Photoshop</span>
+                            <span class="portfolio-tag">Illustrator</span>
+                            <span class="portfolio-tag">InDesign</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-description">ご質問やお仕事のご依頼など、お気軽にご連絡ください</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">対応可能な業務</h3>
+                    <div class="contact-service">
+                        <div class="contact-service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>WEBデザイン</h4>
+                            <p>サイトデザイン、バナー制作</p>
+                        </div>
+                    </div>
+                    <div class="contact-service">
+                        <div class="contact-service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>コーディング</h4>
+                            <p>HTML、SCSS、JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="contact-service">
+                        <div class="contact-service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>WEBサイト構築</h4>
+                            <p>WordPress、ECサイト</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">件名</label>
+                            <input type="text" id="subject" name="subject" required placeholder="お問い合わせ内容">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">送信する</button>
+                        <p class="form-note">※このフォームはデモ用です。</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
