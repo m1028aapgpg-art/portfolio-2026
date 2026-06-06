@@ -90,116 +90,28 @@ animatedElements.forEach(el => {
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
-// Skills data
-const skillsData = {
-    ui: {
-        title: 'UIスキル',
-        skills: [
-            { name: 'ワイヤーフレーム', level: 95 },
-            { name: 'ビジュアルデザイン', level: 95 },
-            { name: 'プロトタイピング', level: 80 },
-            { name: 'ユーザビリティテスト', level: 80 },
-            { name: 'レスポンシブ対応', level: 90 },
-            { name: 'パフォーマンス最適化', level: 90 },
-            { name: 'アクセシビリティ対応', level: 90 },
-        ]
-    },
-    technical: {
-        title: '開発スキル',
-        skills: [
-            { name: 'HTML5', level: 95 },
-            { name: 'Sassy CSS', level: 95 },
-            { name: 'JavaSpript', level: 75 },
-        ]
-    },
-        design: {
-        title: 'グラフィックデザイン',
-        skills: [
-            { name: 'ランディングページ', level: 75 },
-            { name: 'ディスプレイ（バナー）広告', level: 95 },
-            { name: 'パッケージデザイン', level: 95 },
-            { name: 'ポスター・チラシデザイン', level: 75 },
-        ]
-    },
-};
-// Initialize skills
-let currentSkillCategory = 'ui';
-renderSkills(currentSkillCategory);
-
-function switchSkillTab(category) {
-    currentSkillCategory = category;
-
-    // Update tab styles
-    const tabs = document.querySelectorAll('.skill-tab');
-    tabs.forEach(tab => tab.classList.remove('active'));
-    event.target.classList.add('active');
-
-    // Update title and render skills
-    document.getElementById('skillCategoryTitle').textContent = skillsData[category].title;
-    renderSkills(category);
-}
-
-function renderSkills(category) {
-    const container = document.getElementById('skillsContainer');
-    const skills = skillsData[category].skills;
-
-    container.innerHTML = skills.map(skill => `
-        <div class="skill-item">
-            <div class="skill-header">
-                <span class="skill-name">${skill.name}</span>
-                <span class="skill-level">${skill.level}%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%;" data-level="${skill.level}"></div>
-            </div>
-        </div>
-    `).join('');
-
-    // Animate progress bars
-    setTimeout(() => {
-        const progressBars = container.querySelectorAll('.skill-progress');
-        progressBars.forEach(bar => {
-            const level = bar.getAttribute('data-level');
-            bar.style.width = level + '%';
-        });
-    }, 100);
-}
 
 // ===== お問い合わせフォーム送信 =====
-const contactForm = document.getElementById('contact-form');
+//const contactForm = document.getElementById('contact-form');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+//if (contactForm) {
+ //   contactForm.addEventListener('submit', (e) => {
+//        e.preventDefault();
+//
+  //      const formData = {
+ //           name: document.getElementById('name').value,
+ //           email: document.getElementById('email').value,
+ //           subject: document.getElementById('subject').value,
+ //           message: document.getElementById('message').value
+   //     };
 
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
-        };
-
-        // デモ用のアラート
-        alert(`お問い合わせありがとうございます。\n\nお名前: ${formData.name}\nメール: ${formData.email}\n\n※このフォームはデモ用です。実際の送信処理は実装されていません。`);
+        // アラート
+   //     alert(`お問い合わせありがとうございます。\n\nお名前: ${formData.name}\nメール: ${formData.email}`);
 
         // フォームリセット
-        contactForm.reset();
-
-        // 実際のプロジェクトでは、ここでAjaxやFetch APIを使ってサーバーに送信します
-        // 例:
-        // fetch('your-api-endpoint.php', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(formData)
-        // })
-        // .then(response => response.json())
-        // .then(data => {
-        //     console.log('Success:', data);
-        // });
-    });
-}
+ //       contactForm.reset();
+  //  });
+//}
 
 // ===== スムーススクロール（古いブラウザ対応） =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
