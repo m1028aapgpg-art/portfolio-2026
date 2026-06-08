@@ -526,7 +526,7 @@ body {
 .modal-container {
     width: 90%;
     max-width: 800px;
-    max-height: 85vh;
+    max-height: 97svh;
     margin: 10px auto;
     border: none;
     border-radius: 12px;
@@ -568,7 +568,7 @@ body {
 #modal-content {
     padding: 40px;
     overflow-y: auto;
-    max-height: calc(90vh - 30px);
+    max-height: 97svh;
 }
 
 .work-image {
