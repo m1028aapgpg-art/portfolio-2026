@@ -157,7 +157,7 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    background-image: url('https://images.unsplash.com/photo-1758876020204-de202119ef27?w=1920');
+    background-image: url('images/home-bg.webp');
     background-size: cover;
     background-position: center;
     margin-top: 64px;
