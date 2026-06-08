@@ -319,7 +319,7 @@ body {
   background-color: var(--white);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgb(194 194 194 / 56%);
   border: 1px solid rgba(0, 0, 0, 0.02);
   transition: var(--transition), box-shadow 0.3s ease;
 }
@@ -473,12 +473,8 @@ body {
     align-items: flex-end;
     justify-content: flex-start;
     padding: 20px;
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.portfolio-item:hover .portfolio-overlay {
     opacity: 1;
+    transition: var(--transition);
 }
 
 .portfolio-overlay span {
@@ -549,6 +545,10 @@ body {
 .modal-container::backdrop {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
+}
+
+.modal-container h2 {
+    margin-bottom: .5em;
 }
 
 @keyframes fadeIn {
@@ -679,7 +679,7 @@ body {
     background-color: var(--white);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgb(194 194 194 / 56%);
 }
 
 .form-group {
@@ -768,11 +768,6 @@ body {
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
-
-    .portfolio-overlay {
-        opacity: 1;
-    }
-
 
 }
 
