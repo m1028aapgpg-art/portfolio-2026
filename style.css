@@ -768,6 +768,12 @@ body {
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
+
+    .portfolio-overlay {
+        opacity: 1;
+    }
+
+
 }
 
 @media (max-width: 768px) {
